@@ -1,0 +1,26 @@
+.joinRoomForm {
+  max-width: 300px;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: $lightest_gray;
+  padding: 1rem;
+
+  input {
+    margin-bottom: 1rem;
+    outline: none;
+  }
+
+  .conn-status {
+    margin-bottom: 1rem;
+  }
+}
+.button.green {
+  background: $button_green;
+  border: 1px solid $dark_green;
+}
+.button.green:hover {
+  background: darken($button_green, 10%);
+}

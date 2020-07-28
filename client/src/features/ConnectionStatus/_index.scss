@@ -1,0 +1,25 @@
+.conn-status {
+  display: flex;
+  align-items: center;
+
+  .status-circle {
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.25rem;
+  }
+  .connected {
+    background: $dark_green;
+  }
+  .connecting,
+  .reconnecting {
+    background: $blue_font;
+  }
+  .not.connected,
+  .disconnected {
+    background: $button_red;
+  }
+}

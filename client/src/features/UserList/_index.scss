@@ -1,0 +1,22 @@
+aside {
+  background-color: $light_gray;
+  width: 20%;
+  max-width: 200px;
+  color: $dark_gray;
+
+  h3 {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 1rem;
+    font-size: 1.1rem;
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+}

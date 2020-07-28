@@ -1,0 +1,13 @@
+.videoPanel {
+  background: $light_gray;
+  width: 100%;
+  .videos {
+    max-height: calc(100% - 30px);
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    video {
+      width: calc(100% / 3);
+    }
+  }
+}

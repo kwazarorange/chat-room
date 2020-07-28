@@ -1,0 +1,29 @@
+.button {
+  color: white;
+  border: 1px solid black;
+  padding: 0.25rem 0.5rem;
+}
+.button.red {
+  background: $button_red;
+  border: 1px solid $border_red;
+}
+.button.red:hover {
+  background: darken($button_red, 10%);
+}
+
+.navBar {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  padding: 10px;
+  height: 40px;
+  background: $dark_gray;
+  h3 {
+    margin: 0 1rem;
+  }
+  .button {
+    margin-left: auto;
+  }
+}

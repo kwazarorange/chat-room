@@ -1,0 +1,32 @@
+.message-form {
+  display: flex;
+  padding: 5px;
+  background: $lightest_gray;
+  border: 1px solid $gray_border;
+
+  .button {
+    border: 1px solid $gray_border;
+    background: white;
+    border-radius: 5px;
+    margin-left: 5px;
+    color: $button_gray;
+  }
+  .button:disabled {
+    background: $lightest_gray;
+    color: lighten($button_gray, 50%);
+  }
+  .button:hover {
+    color: $dark_font;
+    background: darken($lightest_gray, 5%);
+  }
+}
+
+
+textarea {
+  resize: none;
+  width: 100%;
+  padding: 1em;
+  outline: none;
+  border: 1px solid $gray_border;
+  border-radius: 1rem;
+}

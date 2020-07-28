@@ -1,0 +1,36 @@
+.msg-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem 1rem;
+  span {
+    white-space: pre-line;
+    flex: 1 1 50%;
+    margin-bottom: 0.25rem;
+  }
+  .date {
+    text-align: right;
+    color: $dark_gray;
+  }
+  .message {
+    word-break:break-all;
+    color: $dark_font;
+  }
+  .username {
+    color: $blue_font;
+    font-weight: bold;
+  }
+}
+.msg-container.own.sent {
+  background: darken(white, 10%);
+}
+.msg-container.own.error {
+  background: #F8DADA;
+}
+.msg-container.server {
+  .username, .date {
+    display: none;
+  }
+  .message {
+    text-align: center;
+  }
+}
