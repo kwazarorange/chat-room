@@ -6,8 +6,8 @@ import "./index.scss";
 // Component that displays MediaStream
 // props are:
 // @param {object} stream MediaStream
-
-const Video = ({ stream }) => {
+// @param {boolean} isMuted 
+const Video = ({ stream, isMuted=false }) => {
   const refVideo = useRef(null);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ const Video = ({ stream }) => {
     }
   }, [stream]);
 
-  return <video autoPlay={true} ref={refVideo}></video>;
+  return <video muted={isMuted} autoPlay={true} ref={refVideo}></video>;
 };
 
 Video.propTypes = {

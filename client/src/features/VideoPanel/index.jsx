@@ -25,7 +25,7 @@ const VideoPanel = () => {
       </div>
       {stream ? (
         <div className="videos">
-          <Video stream={stream} />
+          <Video isMuted={true} stream={stream} />
           {remotePeers}
         </div>
       ) : null}

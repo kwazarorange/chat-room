@@ -17,7 +17,7 @@ const ConferenceButton = ({ socket, stream, setStream }) => {
     e.preventDefault();
     setDisabled(true);
     navigator.mediaDevices
-      .getUserMedia({ audio: false, video: true })
+      .getUserMedia({ audio: true, video: true })
       .then((stream) => setStream(stream))
       .then(socket.emit("join-conference"))
       .then(() => {
