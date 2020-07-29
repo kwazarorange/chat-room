@@ -1,12 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import WebRTCVideo from './WebRTCVideo';
 import PropTypes from 'prop-types';
-import "./index.scss";
 
 // Component that displays MediaStream
 // props are:
 // @param {object} stream MediaStream
-// @param {boolean} isMuted 
+// @param {boolean} isMuted
 const Video = ({ stream, isMuted=false }) => {
   const refVideo = useRef(null);
 
